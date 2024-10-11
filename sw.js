@@ -1,4 +1,9 @@
 // service-worker.js
+// Cache name
+const CACHE_NAME = "tap10-v1";
+// Cache targets
+const urlsToCache = ["./", "./tap10"];
+
 self.addEventListener("install", function (e) {
   console.log("[ServiceWorker] Install");
 });
